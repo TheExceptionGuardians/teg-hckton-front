@@ -1,0 +1,18 @@
+<div layout="vertical">
+  <md-content layout-fill>
+    <header>
+      <ab-navbar creation-date="vm.pageData.creationDate" brand="vm.pageData.brand" paths="vm.pageData.paths"></ab-navbar>
+    </header>
+    <ab-cover-image section="vm.pageData.section" section-text="vm.pageData.sectionText" logo-url="vm.pageData.logoURL"></ab-cover-image>    
+    <div class="mdl-layout  mdl-js-layout">
+      <main class="mdl-layout__content"> 
+        <div class="mdl-grid" >
+          <md-card class="mdl-cell mdl-cell--4-col-desktop mdl-cell--8-col-tablet mdl-cell--4-col-phone" ng-repeat="awesomeThing in vm.pageData.contentData | orderBy:'rank'">      
+            <ab-techs item="awesomeThing" ng-if="vm.pageData.contentType ==='techs'"></ab-techs>
+            <ab-guide-item item="awesomeThing" ng-if="vm.pageData.contentType ==='guide-item'"></ab-guide-item> 
+          </md-card>
+        </div>
+      </main>
+    </div>
+  </md-content>
+</div>

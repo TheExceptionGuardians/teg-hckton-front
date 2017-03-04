@@ -1,0 +1,38 @@
+/*angular-material styles are required to this component*/
+
+.imgContainer {
+  overflow: hidden;
+  padding-bottom: 50%; /* here the desired aspect ratio */
+  position: relative;
+}
+
+.imgContainer img {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+md-card-avatar img {
+  width:40px;
+}
+
+md-card-footer .infoButton.md-button.md-ink-ripple:hover {
+  background-color: #722d88;
+  color: white;
+}
+
+.active {
+  color: #D24545;
+}
+
+.right {
+  float: right;
+}
+
+.textContainer{
+  height: 100px;
+  overflow: hidden;
+}

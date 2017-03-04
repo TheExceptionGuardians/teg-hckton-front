@@ -1,0 +1,20 @@
+<section class="jumbotron home" ng-if="ctrl.section == 'home'">
+  <div >
+    <img class="logo" ng-src="{{ctrl.logoUrl}}" />
+  </div>
+  <p class="lead">
+      {{ctrl.sectionText}}
+  </p>
+</section>
+
+<section class="jumbotron about" ng-if="ctrl.section == 'about'">
+  <div class="textsContainerAbout">
+      <h1 class="title_H1" >{{ctrl.sectionH1}}</h1>
+      <p class="lead">
+          {{ctrl.sectionText}}
+      </p>
+  </div>
+  <div class="imgContainerAbout">
+      <div class="bgrAbout"></div>
+  <div>
+</section>

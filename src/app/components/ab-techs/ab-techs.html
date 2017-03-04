@@ -1,0 +1,12 @@
+<md-card-content class="cardContent">
+    <div class="cardInfoContainer">
+        <h3 class="md-title">{{ vm.item.title | myFormat }}</h3>
+        <p>{{ vm.item.description }}</p>
+    </div>
+    <div class="cardImgContainer">
+        <img class="pull-right" ng-src="assets/images/{{ vm.item.logo }}" alt="{{ vm.item.title }}">
+    </div>
+</md-card-content>
+<div class="buttonLine md-action-buttons">
+  <md-button class="buttonInfo" ng-href="{{ vm.item.url }}">+ INFO</md-button>
+</div>

@@ -1,0 +1,63 @@
+/*angular-material styles are required to this component*/
+.logo{  
+  padding: 10% 10% 5% 10%;
+  width: 35%;
+}
+
+@media (min-width: 900px) {
+  .jumbotron.home{
+    height: 89vh;
+    padding: 0;
+  }
+  
+}
+@media (max-width: 900px) {
+  .lead{
+    display:none;
+  }
+}
+
+.jumbotron {
+  background-color: white;
+  border-bottom: 2px solid #d6d6d6;
+  color: #757575;
+  margin-bottom: 30px;
+  padding: 50px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.jumbotron.about {
+  color: #4d265c;
+  display: inline-flex;
+  width: 100%;
+}
+
+.bgrAbout {
+  background-image: url("assets/images/logoCode.png");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100%;
+  width: 100%;
+}
+
+.textsContainerAbout {
+  padding-left: 30%;
+  width: 60%;
+}
+
+.textsContainerAbout .titleH1 {
+  font-family: 'OpenSans-Bold';
+  font-size: 3.5em;
+}
+
+.imgContainerAbout {
+  padding: 0 10% 0 10%;
+  width: 30%;
+}
+
+.lead {
+  font-family: 'OpenSans-Light';
+  font-size: 1.7em;
+}

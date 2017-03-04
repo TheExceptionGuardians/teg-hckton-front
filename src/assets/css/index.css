@@ -1,0 +1,76 @@
+@import url(//fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,700,700italic,400italic);
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/MaterialIcons-Regular.eot?#iefix) format('embedded-opentype'),/* For IE6-8 */
+       local('Material Icons'),
+       local('MaterialIcons-Regular'),
+       url(../fonts/MaterialIcons-Regular.woff2) format('woff2'),
+       url(../fonts/MaterialIcons-Regular.woff) format('woff'),
+       url(../fonts/MaterialIcons-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'OpenSans';
+  src: url(../fonts/OpenSans-Regular.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/OpenSans-Regular.ttf) format('truetype'),
+       url(../fonts/OpenSans-Regular.woff) format('woff'),
+       url(../fonts/OpenSans-Regular.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: url(../fonts/OpenSans-Bold.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/OpenSans-Bold.ttf) format('truetype'),
+       url(../fonts/OpenSans-Bold.woff) format('woff'),
+       url(../fonts/OpenSans-Bold.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'OpenSans-Light';
+  src: url(../fonts/OpenSans-Light.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/OpenSans-Light.ttf) format('truetype'),
+       url(../fonts/OpenSans-Light.woff) format('woff'),
+       url(../fonts/OpenSans-Light.woff2) format('woff2');
+}
+
+html {
+  font-family: 'Roboto Slab', serif;
+}
+
+.toolbar.lay_row {
+  background-color: rgb(7, 12, 16);
+  flex-direction: row;
+}
+
+.md-default-theme {
+  background-color: black;
+}
+
+.material-icons {
+  display: inline-block;
+  font-family: 'Material Icons';
+  font-size: 24px;  /* Preferred icon size */
+  font-style: normal;
+  font-weight: normal;
+  height: 1em;
+  letter-spacing: normal;
+  line-height: 1;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  width: 1em;
+  word-wrap: normal;
+}
+
+.material-icons.grey.md-ink-ripple { 
+  background-color: transparent;
+  color: #dedfe0;
+  margin-top: 20px;
+}
+
+.browsehappy {
+  background: #ccc;
+  color: #000;
+  margin: 0.2em 0;
+  padding: 0.2em 0;
+}
+
