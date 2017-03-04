@@ -2,30 +2,14 @@
 <img src="https://raw.githubusercontent.com/serenity-frontstack/angular-basic/develop/docs/Front-Stack-Angular-Big.png"/>
 </p>
 
-# Angular Basic v1.3
+# The exception guardians
+## Front hackaton app
 
-> Provides fast, reliable and extensible starter for the development of Angular 1.X projects.
-
-Changelog can be found at <a href="CHANGELOG.md" target="_blank">Link</a> 
-
-## Demo
-
- * Link to the application demo:  [https://serenity-frontstack.github.io/angular-basic/](https://serenity-frontstack.github.io/angular-basic/)
-
-
-# Prerequisites
 
 Before we can start to develop an angular application, we need to prepare the system and install some tools that facilitate and automate the development process:
  * Install [NodeJS]( https://nodejs.org/en/) (ensure check npm package in the installation process), which is the Node package manager for server-side components.
  * Install [Bower](https://bower.io/), which is the client-side package manager.
  * Install gulp-cli globally with: `npm install --global gulp-cli`
-
-The next prerequisites depends of your user privileges defined as follow:
-* <a href="prerequisites.md#with-admin-privileges" target="_blank">Prerequisites with Admin privileges</a>
-* <a href="prerequisites.md#without-admin-privileges" target="_blank">Prerequisites without Admin privileges</a>
-
-In case of having a corporative Proxy in the local network, the environment need to be configured. 
- * [In the next tutorial could be found the process to setup the environment](prerequisites.md#proxy-setup).
 
 ## Browser Compatibility 
 1. Angular 1.6.X 
@@ -51,10 +35,6 @@ In case of having a corporative Proxy in the local network, the environment need
 
 ## Installing
 
-Download of the Starter Kit project:
-```
-git clone https://github.com/Serenity-fronstack/angular-basic.git
-```
 
 Installing NPM and Bower packages:
 ```
@@ -231,21 +211,3 @@ In `conf/app.config.json`, can be define the following parameters by environment
 * *uiRouter* : Provides routing and deeplinking services and directives for angular apps.
 * *ngMaterial* : Provides a set of reusable, well-tested, and accessible UI components based on Material Design.
 * *toastr* : A simple javascript toast notifications.
-
-### SOURCES
-
-* [John Papa Angular Styleguide](https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md)
-* [Todd Motto Angular Styleguide](https://github.com/toddmotto/angular-styleguide#comment-standards) 
-* [Angular style guide](https://github.com/mgechev/angularjs-style-guide) 
-* [Generator Angular](https://github.com/yeoman/generator-angular)
-* [Generator Gulp Angular](https://github.com/FountainJS/generator-fountain-webapp)
-* [Angular Official Website](https://angularjs.org/)
-
-## Acknowledgments
-
-* [Samuel Documet](https://github.com/samdofe) : Valuable build and configuration process contributor.
-
-## Social
-
-* [twitter](https://twitter.com/serenityFront)
-* [youtube](https://www.youtube.com/channel/UCVKdSP47XahRYJpvfA7inmg)
