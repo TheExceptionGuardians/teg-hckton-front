@@ -24,7 +24,7 @@
 
     vm.pageData = {
       section: 'home',
-      sectionText: 'Frontend Revolution based on opensource',
+      sectionText: 'The world is mine',
       creationDate: creation.getDate(),
       contentType: 'techs',
       contentData: techs.getTechs(),
