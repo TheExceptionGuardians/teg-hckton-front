@@ -11,7 +11,7 @@ const hub = new HubRegistry([conf.paths.tasks+'/*.js']);
 gulp.registry(hub);
 
 gulp.task('inject', gulp.series(gulp.parallel('styles', 'eslint'), 'inject'));
-gulp.task('build', gulp.series('eslint-failonerror','appconfig', 'partials', 'inject', 'other', 'test', 'build', 'assets', 'build-apidocs'));
+gulp.task('build', gulp.series('eslint-failonerror','appconfig', 'partials', 'inject', 'other'/*, 'test'*/, 'build', 'assets', 'build-apidocs'));
 gulp.task('test', gulp.series('eslint', 'karma:single-run'));
 gulp.task('test:auto', gulp.series('watch', 'karma:auto-run'));
 gulp.task('protractor:src', gulp.series('browsersync:e2e', 'webdriver-update', 'run-protractor'));
