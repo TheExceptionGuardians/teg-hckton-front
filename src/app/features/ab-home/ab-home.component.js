@@ -24,7 +24,7 @@
 
     vm.pageData = {
       section: 'home',
-      sectionText: 'The world is mine 3! and definitive',
+      sectionText: 'Jose marica',
       creationDate: creation.getDate(),
       contentType: 'techs',
       contentData: techs.getTechs(),
