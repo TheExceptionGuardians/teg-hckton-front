@@ -7,10 +7,10 @@
 
   function routeConfig($stateProvider) {
     $stateProvider
-      .state('about', {
-        url: '/about',
-        template: '<ab-about></ab-about>'
-      });
+        .state('home', {
+          url: '/home',
+          template: '<home></home>'
+        });
   }
 
 })();

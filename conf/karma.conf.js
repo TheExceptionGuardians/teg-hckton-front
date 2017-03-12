@@ -12,7 +12,7 @@ var pathSrcHtml = [
 
 var fs = require('fs');
 var appconfig = JSON.parse(fs.readFileSync('./conf/app.config.json'));
-var environment = (argv.dev) ? 'dev' : 'pro';
+var environment = (argv.dev) ? 'dev' : (argv.mock) ? 'mock' : 'pro';
 var threshold = appconfig.coverage_threshold[environment];
 
 function listFiles() {

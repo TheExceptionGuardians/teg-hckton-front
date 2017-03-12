@@ -6,7 +6,7 @@
     .config(config);
 
   /** @ngInject */
-  function config($logProvider, toastrConfig) {
+  function config($logProvider, toastrConfig, EnvironmentConfig) {
     // Enable log
     $logProvider.debugEnabled(true);
     // Set options third-party lib
@@ -15,6 +15,8 @@
     toastrConfig.positionClass = 'toast-bottom-right';
     toastrConfig.preventDuplicates = true;
     toastrConfig.progressBar = true;
+
+   
   }
 
 })();

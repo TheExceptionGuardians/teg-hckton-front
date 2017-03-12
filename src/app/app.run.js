@@ -7,7 +7,7 @@
 
   /** @ngInject */
   function runBlock(toastr) {
-    toastr.info("Application kickstart","Info");
+    
   }
 
 })();
