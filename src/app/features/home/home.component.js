@@ -19,7 +19,7 @@
   function HomeController() {
     var vm = this;
 
-    vm.text="welcome";
+    vm.text="welcome!!!";
   }
 
 })();
