@@ -11,7 +11,7 @@ gulp.task('appconfig', appConfig);
 
 function appConfig() {
 
-  var environment = (argv.dev) ? 'dev' : 'pro';
+  var environment = (argv.pro) ? 'pro' : 'dev';
 
   gutil.log('['+ gutil.colors.blue('Selected environment') +']'+ ' : ', environment);
 

@@ -2,20 +2,12 @@
   "environment_constants": {
     "dev": {
       "EnvironmentConfig": {
-        "api": "http://localhost/",
-        "mocked": false
-      }
-    },
-    "mock": {
-      "EnvironmentConfig": {
-        "api": "https://api.production.com/",
-        "mocked": true
+        "api": "http://localhost:7070"
       }
     },
     "pro": {
       "EnvironmentConfig": {
-        "api": "https://api.production.com/",
-        "mocked": false
+        "api": "http://192.168.0.15:8082"
       }
     }
   },

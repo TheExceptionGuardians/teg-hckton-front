@@ -14,7 +14,8 @@
 
     it('should have a specific sectionTest', function() {
       var vm = $componentController('home', {$scope: newScope}, null);
-      
+
+      expect(vm.text).toEqual("welcome!!!");
     });
 
   });

@@ -1,5 +1,5 @@
 (function () { 
  return angular.module("app")
-.constant("EnvironmentConfig", {"api":"https://api.production.com/","mocked":false});
+.constant("EnvironmentConfig", {"api":"http://localhost:7070"});
 
 })();

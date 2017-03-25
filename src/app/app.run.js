@@ -6,8 +6,7 @@
     .run(runBlock);
 
   /** @ngInject */
-  function runBlock(toastr) {
-    
+  function runBlock() {
   }
 
 })();

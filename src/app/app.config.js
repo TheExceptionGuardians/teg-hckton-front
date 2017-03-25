@@ -1,22 +1,15 @@
 'use strict';
-(function() {
+(function () {
 
   angular
     .module('app')
     .config(config);
 
   /** @ngInject */
-  function config($logProvider, toastrConfig, EnvironmentConfig) {
+  function config($logProvider) {
     // Enable log
     $logProvider.debugEnabled(true);
-    // Set options third-party lib
-    toastrConfig.allowHtml = true;
-    toastrConfig.timeOut = 1500;
-    toastrConfig.positionClass = 'toast-bottom-right';
-    toastrConfig.preventDuplicates = true;
-    toastrConfig.progressBar = true;
 
-   
   }
 
 })();
