@@ -1,174 +1,39 @@
-<p align="center">
-<img src="https://raw.githubusercontent.com/serenity-frontstack/angular-basic/develop/docs/Front-Stack-Angular-Big.png"/>
-</p>
-
 # The exception guardians
 ## Front hackaton app
 
 
-Before we can start to develop an angular application, we need to prepare the system and install some tools that facilitate and automate the development process:
- * Install [NodeJS]( https://nodejs.org/en/) (ensure check npm package in the installation process), which is the Node package manager for server-side components.
- * Install [Bower](https://bower.io/), which is the client-side package manager.
- * Install gulp-cli globally with: `npm install --global gulp-cli`
-
-## Browser Compatibility 
-1. Angular 1.6.X 
-    * IE9 or higher.
-    * Safari
-    * Chrome
-    * Firefox
-    * Opera 15 or higher.
-    * mobile browsers (Android, Chrome Mobile, iOS Safari, Windows phone ie)
-    [source](https://code.angularjs.org/1.5.6/docs/misc/faq)
-
-2. ECMAScript
-    * Check [here](http://kangax.github.io/compat-table/es5/) ECMAScript compatibility
-
-3. CSS3
-    * [Support list](http://www.w3schools.com/cssref/css3_browsersupport.asp)
-    * [Test your browser](http://css3test.com/)
-
-4. HTML5
-    * [Test your browser](https://html5test.com/)
-
-# Getting Started
-
-## Installing
-
-
-Installing NPM and Bower packages:
-```
-npm install & bower install
-```
+Requisitos antes de empezar a desarrollar
+ * Instalar [NodeJS]( https://nodejs.org/en/) 
+ * Instalar Bower ejecutando `npm install -g bower`.
+ * Instalar Gulp ejecutando `npm install -g gulp`.
+ * Instalar dependencias de NodeJS ejecutando `npm install`.
+ * Instalar dependencias de bower ejecutando `bower install`.
 
 ## Running
-Runs locally, no database required.
-
-`npm run serve` and the browser will open `http://localhost:3000`
+Arrancar localmente ejecutando `npm run serve` el servidor se levantará en `http://localhost:3000`
 It uses BrowserSync that provides live reload which refresh the application in the browser with any changes produced on the source.   
 
 ## Testing
 
 ### Unit testing
 
-`npm run test` or  `npm run test:auto` to launch the unit tests defined with Jasmine (testing framework) and Karma (test Runner).
-
-### Javascript code linting
-
-`npm run test` or `npm run test:auto` to launch the rule-lint tests defined with Eslint.
-
-### CSS code linting
-
-`npm run css_test` to launch the rule-lint tests defined with CSSlint.
+`npm run test` o  `npm run test:auto` para lanzar los test unitarios definidos con Jasmine (testing framework) y Karma (test Runner).
   
 ### E2E testing
-> Note: e2e testing needs to have jdk installed. 
-[download here](http://www.oracle.com/technetwork/java/javase/downloads)
+> Note: Es necesario tener instalado el JDK para lanzar el testing E2E
+[download](http://www.oracle.com/technetwork/java/javase/downloads)
 
-`npm run protractor`  to run the end to end tests with protractor framework, the web driver of Selenium integrated with Angular. 
-
-> If you are under a proxy, npm run protractor task needs update a webdriver manually
-
-`webdriver-manager --proxy http://[IP_PROXY]:[PORT] update`
+`npm run protractor`  para lanzar los test end to end con el framework protactor, el web driver de selenium integrado con Angular. 
 
 ## Build
 
-`npm run` or `npm run build` compile and optimize the sources in /dist directory ready to be published in *Production*. Thus generates the api documentation inside the docs/api folder.  
-
-## Structure
-
-This project follows our [best Practice Recommendations for Angular App Structure](https://github.com/Serenity-fronstack/angular-styleguide/blob/master/README.md)
+`npm run` o `npm run build` compila y optimiza los fuentes en el directorio /dist listo para publicar en *prducción*. Además genera la documentación en la carpeta docs/api.  
 
 
-The root directory of the application:
+### Configuración de entorno
 
-```
-├──  bower_components/
-├──  e2e/
-├──  docs/
-├──  conf/
-├──  gulp/
-├──  nodes_modules/
-│
-├──  src/
-│   ├──  app/
-│   │	├──  components/
-│   │   │
-│   │   │   └──  coverImage/
-│   │   │       ├──  coverImage.component.js
-│   │   │       ├──  coverImage.css
-│   │   │       ├──  coverImage.html
-│   │   │
-│   │   │   └──  guideItem/
-│   │   │       ├──  guideItem.component.js
-│   │   │       ├──  guideItem.css
-│   │   │       ├──  guideItem.html
-│   │   │       ├──  guideItem.spec.js
-│   │   │       ├──  guideItems.service.js
-│   │   │       ├──  guideItems.service.spec.js
-│   │   │
-│   │   │   └──  navbar/
-│   │   │       ├──  navbar.component.js
-│   │   │       ├──  navbar.css
-│   │   │       ├──  navbar.html
-│   │   │       ├──  navbar.spec.js
-│   │   │
-│   │   │   └──  serenityLine/
-│   │   │       ├──  serenityLine.component.js
-│   │   │       ├──  serenityLine.css
-│   │   │       ├──  serenityLine.html
-│   │   │       ├──  serenityLine.spec.js
-│   │   │       ├──  serenityLines.service.js
-│   │   │       ├──  serenityLines.service.spec.js
-│   │   │
-│   │   ├──  features/
-│   │   │
-│   │   │   └──  about/
-│   │   │       ├──  about.component.js
-│   │   │       ├──  about.html
-│   │   │       ├──  about.route.js
-│   │   │       ├──  about.spec.js
-│   │   │
-│   │   │   └──  home/
-│   │   │       ├──  home.component.js
-│   │   │       ├──  home.html
-│   │   │       ├──  home.route.js
-│   │   │       ├──  home.spec.js    
-│   │   │
-│   │   └──  app.config.js
-│   │   └──  app.constants.js
-│   │   └──  app.module.js
-│   │   └──  app.route.js
-│   │   └──  app.run.js
-|   |
-│   ├──  assets/
-│   │   ├──  images/
-│   │   └──  css/
-│   │       └──  index.css
-│   ├──  favico.ico
-│   └──  index.html
-│
-├──  .bowerrc
-├──  .editorconfig
-├──  .gitignore
-├──  .eslintrc
-├──  .csslintrc
-├──  bower.json
-├──  gulpfile.js
-├──  karma.conf.js
-├──  package.json
-└──  protractor.conf.js
-```
-## Configuration
+Están definidos dos entornos de ejecución distintos. `dev y prod`. Cada tarea de gulp permite añadir el perfil de ejecución.
 
-The different gulp modules could be configured through a series of config files available in the `/config` folder. Settings such as Karma, Protractor or Coverage definition could be setup with these files.
-
-### Environment configuration
-
-At the same time, in this project is defined two different environments `Development and Production`. Each one have gulp tasks and module setups adapted to their requirements.
-
-You can build or serve the application depending each environment you can add the flag --dev --pro defined app.config.js
-This takes the constanst key value defined in that file , example:
 ```javascript
 npm run serve --dev
 npm run serve --pro
@@ -177,37 +42,13 @@ npm run serve:dist --pro
 npm run build --dev
 npm run build --pro
 ```
-In `conf/app.config.json`, can be define the following parameters by environment: 
- * **environment_constants**: Parameters that be transform in an Angular module **src/app/app.environment.js** defining the list of constant available to Angular.
- * **coverage_threshold**: Minimum coverage limit necessary to perform a build.    
+En el fichero `conf/app.config.json`, se pueden definir parámetros de cofiguración dependientes del entorno.
 
-## Full list of Gulp tasks
+## Lista de tareas de gulp
 
-* `npm run` or `npm run build` to build an optimized version of your application in `/dist`
-* `npm run serve` to launch a browser sync server on your source 
-* `npm run serve:dist` to launch a server on your production-ready application 
-* `npm run serve:apidoc` to launch a browser sync server on your api documentation				
-* `npm run test` to launch your unit tests with Karma 		
-* `npm run css_test` to launch your css tests with CssLint 									
-* `npm run test:auto` to launch your unit tests with Karma in watch mode 
-* `npm run protractor` to launch your e2e tests with protractor 							
-* `npm run protractor:dist` to launch your e2e tests with Protractor on the dist files   	
-* `npm run zip` to zip the built and optimized version of your application from `/dist` to a zip file in same folder
-
-### Features included in the gulpfile
-* *uglify* : optimize all your JavaScript
-* *csso* : optimize all your CSS
-* *autoprefixer* : add vendor prefixes to CSS
-* *rev* : add a hash in the file names to prevent browser cache problems
-* *watch* : watch your source files and recompile them automatically
-* *eslint* : The pluggable linting utility for JavaScript
-* *csslint* : The pluggable linting utility for CSS
-* *Unit test (karma)* : out of the box unit test configuration with karma
-* *e2e test (protractor)* : out of the box e2e test configuration with protractor
-* *browser sync* : full-featured development web server with livereload and devices sync
-* *angular-templatecache* : all HTML partials will be converted to JS to be bundled in the application
-
-## Angular Modules
-* *uiRouter* : Provides routing and deeplinking services and directives for angular apps.
-* *ngMaterial* : Provides a set of reusable, well-tested, and accessible UI components based on Material Design.
-* *toastr* : A simple javascript toast notifications.
+* `npm run` or `npm run build` construye una versión optimizada en `/dist`
+* `npm run serve` para levantar el servidor sincronizado con el código fuente.
+* `npm run serve:dist` para levantar el servidor con la versión lista para producción.
+* `npm run serve:apidoc` para lanzar el servidor web apuntando a la documentación.
+* `npm run test` para lanzar los tests unitarios. 		
+* `npm run css_test` para lanzar los tests de css. 									
