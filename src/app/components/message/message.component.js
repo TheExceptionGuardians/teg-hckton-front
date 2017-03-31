@@ -12,14 +12,16 @@
     .component('message', {
       templateUrl: 'app/components/message/message.html',
       controller: messageController,
-      controllerAs: 'vm'
+      controllerAs: 'vm',
+      bindings:{
+        data: '<'
+      }
     });
 
   /** @ngInject */
   function messageController() {
     var vm = this;
 
-    vm.text="welcome!!!";
   }
 
 })();

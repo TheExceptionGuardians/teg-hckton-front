@@ -1,18 +1,12 @@
-<md-content class="md-padding" layout-xs="column" layout="row">
-    <div flex-xs flex-gt-xs="50" layout="column">
-      <md-card  md-theme-watch>
-        <md-card-title>
-          <md-card-title-text>
-            <span class="md-headline">Card with image</span>
-            <span class="md-subhead">Large</span>
-          </md-card-title-text>
-          <md-card-title-media>
-            <div class="md-media-lg card-media"></div>
-          </md-card-title-media>
-        </md-card-title>
-        <md-card-actions layout="row" layout-align="start center">
-            hello
-        </md-card-actions>
-      </md-card>
-    </div>
-  </md-content>
+
+  <md-card  md-theme-watch layout="column" layout-align="center start" flex="100" >
+    <md-card-title>
+      <md-card-title-media flex>
+          {{vm.data.msg}}           
+      </md-card-title-media>
+    </md-card-title>
+    <md-card-actions layout="column" flex layout-align="center start">
+        <span>{{vm.data.user.name}}</span>
+        <span> {{vm.data.created}}</span>
+    </md-card-actions>
+  </md-card>
