@@ -7,7 +7,7 @@
     },
     "pro": {
       "EnvironmentConfig": {
-        "api": "http://192.168.0.15:8082"
+        "api": "http://192.168.1.41:8082"
       }
     }
   },
