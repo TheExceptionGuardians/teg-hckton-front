@@ -1,0 +1,18 @@
+<md-card>
+    <md-card-title>
+        <md-card-title-text>
+            <span class="md-headline">Create new message:</span>
+        </md-card-title-text>
+    </md-card-title>
+    <md-card-content>
+        <md-content layout-padding="">
+            <md-input-container class="md-block">
+                <label>message text</label>
+                <textarea ng-model="vm.message.text" md-maxlength="150" rows="5" md-select-on-focus=""></textarea>
+            </md-input-container>
+        </md-content>
+    </md-card-content>
+    <md-card-actions layout="row" layout-align="end center">
+        <md-button ng-click="submitCreateMessage()">Create</md-button>
+    </md-card-actions>
+</md-card>
