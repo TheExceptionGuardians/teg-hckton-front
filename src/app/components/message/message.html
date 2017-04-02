@@ -1,10 +1,10 @@
 
-  <md-card  md-theme-watch layout="column" layout-align="center start" flex="100" >
-    <md-card-title>
-      <md-card-title-media flex>
+  <md-card  md-theme-watch  >
+   <md-card-content>
+        <md-content layout-padding="">
           {{vm.data.msg}}           
-      </md-card-title-media>
-    </md-card-title>
+        </md-content>
+   </md-card-content>
     <md-card-actions layout="column" flex layout-align="center start">
         <span>{{vm.data.user.name}}</span>
         <span> {{vm.data.created}}</span>
